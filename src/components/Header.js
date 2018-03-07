@@ -14,7 +14,8 @@ const Header = props => {
       body: JSON.stringify({
         stripeToken: charge.id,
         stripeEmail: charge.email,
-        amount: 3000,
+        description: 'ECS Purchase',
+        amount: 3500,
       }),
     }).catch(err => {
       console.error('Error:', err)
@@ -58,7 +59,7 @@ const Header = props => {
               description="Fyreworks LLC"
               panelLabel={`Pay`}
               currency="USD"
-              amount={3000}
+              amount={3500}
               image={require('../images/icon.jpg')}
               stripeKey="pk_live_B64x8t6rLJNzanCWVXOs1pu5"
             >
