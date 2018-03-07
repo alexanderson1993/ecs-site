@@ -67,14 +67,7 @@ const Header = props => {
             </StripeCheckout>
           </li>
           <li>
-            <a
-              href="javascript:;"
-              onClick={() => {
-                props.onOpenArticle('contact')
-              }}
-            >
-              Contact
-            </a>
+            <a href="mailto:alex@fyreworks.us">Contact</a>
           </li>
         </ul>
       </nav>
